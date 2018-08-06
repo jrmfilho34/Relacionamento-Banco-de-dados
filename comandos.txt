@@ -1,0 +1,19 @@
+1 passo:
+        -> criar o banco de dados
+        -> configurar conexão
+        -> criar o models
+                        -> php artisan make:auth
+                        -> php artisan make:model produto -m
+                        -> php artisan make:model pedido -m
+                        -> php artisan make:model desconto -m
+                        -> php artisan make:model categorias -m
+                        -> php artisan make:model fotos -m
+                        -> php artisan make:model endereco -m
+        ->definir relacionamento
+                        -> 1:N = Categoria:produtos (ok) -> (ok) -(ok)
+                        -> 1:N = Produtos:Fotos   (ok)   -> (ok) -(ok)
+                        -> 1:N = Usuarios:pedidos  (OK)  -> (ok) -(ok)
+                        -> 1:1 = Usuario:Endereco (ok)   -> (ok)
+                        -> N:N = Pedido:descontos (ok)   -> (ok)
+                        -> 1:N = Produto:pedido (ok)     -> (ok)
+
